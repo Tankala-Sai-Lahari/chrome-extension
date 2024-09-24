@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="popup.css">
+  <title>Study Helper</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Study Helper</h1>
+
+    <!-- Search Meaning -->
+    <div class="section">
+      <input type="text" id="word" placeholder="Search meaning...">
+      <button id="searchBtn">Search</button>
+      <div id="definition"></div>
+    </div>
+
+    <!-- Notes Section -->
+    <div class="section">
+      <h2>Notes</h2>
+      <textarea id="notes" placeholder="Type your notes here..."></textarea>
+      <button id="saveNotesBtn">Save Notes</button>
+    </div>
+
+    <!-- Study Alerts -->
+    <div class="section">
+      <h2>Set Study Alert</h2>
+      <input type="datetime-local" id="alertTime">
+      <button id="setAlertBtn">Set Alert</button>
+    </div>
+
+    <!-- Website Blocking -->
+    <div class="section">
+      <h2>Block Websites</h2>
+      <textarea id="blockList" placeholder="Enter websites to block, separated by commas"></textarea>
+      <button id="blockSitesBtn">Block Websites</button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
